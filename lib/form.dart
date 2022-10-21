@@ -1,3 +1,4 @@
+import 'package:acara26/main.dart';
 import 'package:flutter/material.dart';
 
 class Baru extends StatefulWidget {
@@ -153,6 +154,18 @@ class _BelajarState extends State<Baru> {
                     onPressed: () {
                       kirimData();
                     },
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: ElevatedButton(
+                        child: Text("Acara 25"),
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.teal,
+                        ),
+                        onPressed: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Belajar()))),
                   )
                 ],
               ),
